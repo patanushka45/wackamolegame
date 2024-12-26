@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+  font-family: 'Righteous', sans-serif; /* Applying unique font */
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  color: #fff;
+  background-color: #121212;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Righteous', sans-serif; /* Apply globally to body */
+  font-size: 16px;
+  background-color: #121212;
+}
+
+header {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff; /* White text */
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+h1, h2 {
+  font-family: 'Righteous', sans-serif; /* Apply font to headers */
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  margin-block-end: 15px;
+  letter-spacing: 2px;
+  color: #bbb; /* Slightly muted color */
+}
+
+div {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 80px); /* Adjusted for header height */
+  width: 100%;
+  background-color: #121212;
+}
+
+section:hover {
+  cursor: pointer;
+  transform: scale(1.05); /* Hover effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  -webkit-user-drag: none;
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for images */
+}
+
+main {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 100ch;
+  padding: 5px;
+}
+
+article {
+  display: grid;
+  place-content: center;
+  gap: 10px;
+  grid-template-columns: repeat(3, 256px)
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
